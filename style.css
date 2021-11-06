@@ -1,0 +1,370 @@
+*{padding:0; margin:0;}
+
+
+/**********************************************/
+/******************GENERAL*********************/
+/**********************************************/
+
+body {
+    max-width: 1920px;
+}
+
+.line{
+    margin-top: -14px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(185, 184, 184, 0.63);
+}
+
+.redes{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    position: fixed;   
+    top: 50%;
+    left: 0px;
+}
+
+.email{
+    width: 38px;
+    height: 38px;
+    background-color: #de961a;
+    transition: width 2s;
+}
+.email:hover{
+    display: inline-flex;
+    width: 100px;
+}
+
+.instagram{
+    width: 38px;
+    height: 38px;
+    background-color: #774430;
+    transition: width 2s;
+}
+.instagram:hover{
+    display: inline-flex;
+    width: 100px;
+}
+
+.whatsapp{
+    width: 38px;
+    height: 38px;
+    background-color: #1ebea5;
+    transition: width 2s;
+}
+.whatsapp:hover{
+    display: inline-flex;
+    width: 100px;
+}
+
+/**********************************************/
+/*******************HEADER*********************/
+/**********************************************/
+
+Header{
+    display: flex;
+    padding: 20px 0px 5px 50px;
+    background-color: rgba(255, 91, 69, 1);
+}
+
+.header__image{
+    max-width: 100%;
+    margin-bottom: -5px;
+}
+
+
+
+
+/**********************************************/
+/*********************NAV**********************/
+/**********************************************/
+
+nav{
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.nav__texto{
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+nav a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: white;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 0; 
+}
+nav li {
+    display: inline-block;
+    width:170px;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+
+nav  ul ul {
+    position: absolute;
+    display: none;
+    background-color: rgba(255, 91, 69, 1);
+}
+
+nav  ul ul li {
+    display: block;
+}
+
+nav  ul li:hover ul {
+    display: block;;
+}
+
+
+
+
+/**********************************************/
+/*******************INDEX**********************/
+/**********************************************/
+
+
+/*                CATEGORIAS                  */
+
+.categorias{
+    padding: 50px 17% 15PX 17%;
+    background-color: rgba(230, 227, 227, 0.459);
+
+}
+
+.secciones{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.categorias__texto{
+    text-transform: uppercase;
+    font-weight:bolder;
+    max-width: 120px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+.categorias__fotos{
+    max-width: 180px;
+    max-height: 180px;
+    box-shadow: 2px 2px 2px grey;
+    transition: transform 2s, filter 1s ease-in-out
+}
+
+.categorias__fotos:hover {
+    overflow: hidden;
+    filter: brightness(90%);
+    transform: scale(1.15);
+
+}
+
+.categorias__titulo{
+    display: inline-flex;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3fdfffd0 ;
+
+}
+
+
+
+
+/*                DESTACADOS                  */
+
+
+
+.container {
+    display: grid; 
+    grid-auto-flow: row dense; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 180px 180px 180px 180px 180px; 
+    grid-template-rows: 180px 180px 180px; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+        "primero segundo tercero ofertas ofertas"
+        "cuarto quinto sexto ofertas ofertas"
+        "septimo octavo noveno ofertas ofertas"; 
+    justify-content: center; 
+    align-content: center; 
+    
+}
+
+.ofertas { 
+    grid-area: ofertas;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7);
+    text-align: center;
+}
+.primero { 
+    grid-area: primero;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+.segundo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+.tercero { 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+.cuarto { 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+.quinto {  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+.sexto { 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+.septimo { 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+.octavo {  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+.noveno { 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px grey ;
+    background-color: rgba(228, 228, 228, 0.7) ;
+}
+
+.destacados__imagenes{
+    max-width: 120px;
+}
+
+.ofertas__imagenes{
+    max-width: 240px;
+    max-height: 360px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    color: darkblue;
+    background-color: lightskyblue;
+}
+
+table {
+    border: 5px solid;
+    font-size: 20px;
+}
+
+th{
+    font-family: 'Roboto', sans-serif;
+    background-color: lightskyblue;
+    border: 1px solid
+}
+
+tr, td{
+    border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+.contactanos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info{
+    max-width: 25%;
+}
+
+
+
+
+
+
+
+Footer{
+    padding: 20px 50px;
+    background-color: rgba(255, 91, 69, 1);
+}
+
+
+
+
+/* Ejercicios FLEX GRID */
+
+
+
+
+
+
+
+
+
+
