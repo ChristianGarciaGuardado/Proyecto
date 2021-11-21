@@ -3,34 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <title>Merchandising</title>
 </head>
 <body>
-    <header class="header" >
+    
+    <header>    
         <div>
             <a href="./index.html"><img src="Imagenes/logoipsum-logo-4.svg" alt="Logo de la marca" /></a>
         </div>
-        <nav class="nav__texto">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a>Categorias</a>
-                    <ul>
-                        <li><a href="">Cuidado y proteccion</a></li>
-                        <li><a href="">Hogar y tiempo libre</a></li>
-                        <li><a href="">Indumentaria</a></li>
-                        <li><a href="">Marroquineria</a></li>
-                        <li><a href="">Oficina y negocios</a></li>
-                        <li><a href="">Tecnologia</a></li>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav d me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./ShopOnline.html">Shop Online</a></li>
+                                <li><a class="dropdown-item" href="./DesarrollosDeMarca.html">Desarrollos de marca</a></li>
+                                <li><a class="dropdown-item" href="./Indumentaria.html">Indumentaria</a></li>
+                                <li><a class="dropdown-item" href="">Packaging</a></li>
+                                <li><a class="dropdown-item" href="./contacto.html">Contactanos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link active" href="./ShopOnline.html">Shop Online</a></li>
+                        <li class="nav-item"> <a class="nav-link active" href="./DesarrollosDeMarca.html">Desarrollos De Marca</a></li>
+                        <li class="nav-item"> <a class="nav-link active" href="./Indumentaria.html">Indumentaria</a></li>
+                        <li class="nav-item"> <a class="nav-link active" href="">Packaging</a></li>
+                        <li class="nav-item"> <a class="nav-link active" href="./contacto.html">Contactanos</a></li>
+                        
+                        <li></li>
                     </ul>
-                </li>
-                <li><a href="./ShopOnline.html">Shop Online</a></li>
-                <li><a href="./DesarrollosDeMarca.html">Desarrollos de marca</a></li>
-                <li><a href="./Indumentaria.html">Indumentaria</a></li>
-                <li><a href="">Packaging</a></li>
-                <li><a href="./contacto.html">Contactanos</a></li>
-            </ul>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
         </nav>
     </header>
 
@@ -82,10 +98,10 @@
 <!-- Ejercicio GRID -->
 
 
-    <section>
-        <h2>Destacados</h2>
-
-        <div class="container">
+    <section class="destacados">
+        <h2 class="destacados__titulo">DESTACADOS</h2>
+        <div class="line"></div>
+        <div class="grid">
             <div class="primero" >
                 <img src="Imagenes/521-5210710_work-in-progress-png-clipart.png" alt="" class="destacados__imagenes">
                 <P>Prueba</P>
@@ -135,18 +151,42 @@
     <section>
         <!-- Proceso de compra(duda si hacerlo con imagen o texto). -->
     </section>
-    <footer class="Footer">
-        <nav>
-            <a href="">Mail</a>
-            <a href="">Whatsapp</a>
-            <a href="">Instagram</a>
-        </nav>
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center" style="background-color: rgba(255, 91, 69, 1);">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn  btn-floating m-1" href="#!" role="button"><img src="/bootstrap-icons-1.7.1/facebook.svg" alt=""></a>
+            <!-- Twitter -->
+            <a class="btn  btn-floating m-1"  href="#!" role="button"><img src="/bootstrap-icons-1.7.1/twitter.svg" alt=""></a>
+            <!-- Google -->
+            <a class="btn  btn-floating m-1"  href="#!" role="button"><img src="/bootstrap-icons-1.7.1/google.svg" alt=""></a>
+            <!-- Instagram -->
+            <a class="btn  btn-floating m-1"  href="#!" role="button"><img src="/bootstrap-icons-1.7.1/instagram.svg" alt=""></a>
+            <!-- Linkedin -->
+            <a class="btn  btn-floating m-1"  href="#!" role="button"><img src="/bootstrap-icons-1.7.1/linkedin.svg" alt=""></a>
+            <!-- Github -->
+            <a class="btn  btn-floating m-1"  href="#!" role="button"><img src="/bootstrap-icons-1.7.1/github.svg" alt=""></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">© 2021 Copyright Lorem impsum</div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
 
 
 
-    <footer>
 
-    </footer>
+
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

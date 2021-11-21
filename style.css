@@ -1,4 +1,5 @@
 *{padding:0; margin:0;}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
 
 
 /**********************************************/
@@ -166,16 +167,18 @@ nav  ul li:hover ul {
 }
 
 .categorias__fotos{
+    overflow: hidden;
     max-width: 180px;
     max-height: 180px;
     box-shadow: 2px 2px 2px grey;
-    transition: transform 2s, filter 1s ease-in-out
+    transition: transform 0.2s, visivility .25s ease-in;
 }
 
 .categorias__fotos:hover {
-    overflow: hidden;
-    filter: brightness(90%);
+    max-height: 180px;
+    max-width: 180px;
     transform: scale(1.15);
+    overflow: hidden;
 
 }
 
@@ -188,13 +191,21 @@ nav  ul li:hover ul {
 }
 
 
-
-
 /*                DESTACADOS                  */
 
+.destacados{
+    padding: 50px 17% 15PX 17%;
+}
 
+.destacados__titulo{
+    display: inline-flex;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3fdfffd0 ;
 
-.container {
+}
+
+.grid {
     display: grid; 
     grid-auto-flow: row dense; 
     grid-auto-columns: 1fr; 
@@ -207,7 +218,7 @@ nav  ul li:hover ul {
         "septimo octavo noveno ofertas ofertas"; 
     justify-content: center; 
     align-content: center; 
-    
+    padding-bottom: 50px;
 }
 
 .ofertas { 
@@ -298,13 +309,6 @@ nav  ul li:hover ul {
 
 
 
-
-
-
-
-
-
-
 .titulo{
     font-family: 'Roboto', sans-serif;
     color: darkblue;
@@ -332,8 +336,6 @@ tr, td{
 
 
 
-
-
 .contactanos{
     display: flex;
     justify-content: space-evenly;
@@ -349,10 +351,6 @@ tr, td{
 
 
 
-Footer{
-    padding: 20px 50px;
-    background-color: rgba(255, 91, 69, 1);
-}
 
 
 
